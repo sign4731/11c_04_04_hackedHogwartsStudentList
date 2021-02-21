@@ -1,0 +1,230 @@
+/* hacked classes */
+.hacked {
+  background-color: black;
+  color: #00841f;
+  text-shadow: 2px 2px 8px #00841f;
+}
+
+/*General*/
+
+body {
+  background-color: #31211c;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#search {
+  margin: 10px 10px;
+  width: 200px;
+  height: 25px;
+  background-color: #91776e;
+  border: 2px solid black;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.5;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 150px;
+  color: #c9b903;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  color: #c9b903;
+  font-size: 50px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+p {
+  font-family: "Cinzel", serif;
+  color: #c9b903;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+button {
+  font-family: "Cinzel", serif;
+  color: #c9b903;
+  background-image: url(banner2.svg);
+  height: 40px;
+  width: 190.9px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  margin: 10px;
+  justify-self: center;
+}
+
+.chosen style {
+  fill: #460804;
+}
+
+#filterContainer {
+  margin: 50px 0;
+  /* width: 70%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 auto;
+  align-items: center; */
+}
+
+/*List of students*/
+
+#listview {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 90%;
+  margin: 0 auto;
+}
+
+.student_article {
+  width: 300px;
+  height: 500px;
+  background-color: #91776e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.student_article img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.student_article p {
+  color: black;
+}
+
+.student_article .ifExpelled {
+  color: #460804;
+}
+
+/* Popup general */
+
+.noDisplay {
+  display: none;
+}
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup article {
+  display: flex;
+  width: 80vw;
+  max-width: 1152px;
+  height: 85vh;
+  background-color: white;
+  margin: 40px auto;
+}
+.image_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 70px;
+}
+.image_wrapper img {
+  width: 250px;
+  height: 250px;
+}
+
+.popup article .textwrapper {
+  width: 550px;
+}
+.popup article .textwrapper p {
+  margin: 10px 0;
+  color: black;
+}
+.popup article .textwrapper h2 {
+  text-align: left;
+  font-size: 35px;
+  color: black;
+}
+
+.popup article .make_buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 260px;
+}
+
+.popup article .make_buttons button {
+  background-image: none;
+  width: 150px;
+  height: 30px;
+  background-color: #795b51;
+  border: 2px solid black;
+}
+.popup article .closeButton {
+  margin: 100px 0 0 70px;
+}
+
+/* popup slytherin */
+.popupSlytherin article {
+  background-color: #3a5f43;
+}
+
+/* popup gryffindor */
+.popupGryffindor article {
+  background-color: #934d4d;
+}
+
+/* popup hufflepuff */
+.popupHufflepuff article {
+  background-color: #ad9a4e;
+}
+
+/* popup ravenclaw */
+.popupRavenclaw article {
+  background-color: #56688d;
+}
+
+/* warnings */
+
+.popup_warning article {
+  height: 70vh;
+  width: 70vw;
+  background-color: #460804;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.popup_warning article h1 {
+  margin: 50px;
+}
+
+.popup_warning article button {
+  margin-top: 100px;
+}
