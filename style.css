@@ -17,8 +17,19 @@ header {
   justify-content: flex-end;
 }
 
+header .search {
+  background-image: none;
+  height: 25px;
+  width: 50px;
+  background: white;
+  font-size: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+}
+
 #search {
-  margin: 10px 10px;
+  margin: 10px 0px;
   width: 200px;
   height: 25px;
   background-color: #91776e;
@@ -70,8 +81,8 @@ button {
   justify-self: center;
 }
 
-.chosen style {
-  fill: #460804;
+.chosen {
+  color: #460804;
 }
 
 #filterContainer {
@@ -96,7 +107,7 @@ button {
 
 .student_article {
   width: 300px;
-  height: 500px;
+  height: 700px;
   background-color: #91776e;
   display: flex;
   flex-direction: column;
@@ -121,9 +132,6 @@ button {
 
 /* Popup general */
 
-.noDisplay {
-  display: none;
-}
 .popup {
   position: fixed;
   z-index: 1;
@@ -138,7 +146,9 @@ button {
   display: flex;
   width: 80vw;
   max-width: 1152px;
-  height: 85vh;
+  height: 600px;
+  max-height: 600px;
+  /* height: 85vh; */
   background-color: white;
   margin: 40px auto;
 }
@@ -185,23 +195,35 @@ button {
 }
 
 /* popup slytherin */
-.popupSlytherin article {
+#popupSlytherin {
+  display: none;
+}
+#popupSlytherin article {
   background-color: #3a5f43;
 }
 
 /* popup gryffindor */
-.popupGryffindor article {
+#popupGryffindor article {
   background-color: #934d4d;
+}
+#popupGryffindor {
+  display: none;
 }
 
 /* popup hufflepuff */
-.popupHufflepuff article {
+#popupHufflepuff article {
   background-color: #ad9a4e;
+}
+#popupHufflepuff {
+  display: none;
 }
 
 /* popup ravenclaw */
-.popupRavenclaw article {
+#popupRavenclaw article {
   background-color: #56688d;
+}
+#popupRavenclaw {
+  display: none;
 }
 
 /* warnings */
@@ -215,16 +237,28 @@ button {
   left: 50%;
   top: 100px;
   transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+  display: none;
 }
 
 .popup_warning article h1 {
-  margin: 50px;
+  margin: 50px 0;
+  text-align: center;
+}
+.popup_warning article p {
+  text-align: center;
+}
+.popup_warning article button {
+  margin: 100px 50%;
+  transform: translateX(-50%);
+}
+.prefect_warning article button {
+  position: relative;
+  margin: 10px 0 0 500px;
 }
 
-.popup_warning article button {
-  margin-top: 100px;
+/* Footer */
+footer p {
+  margin-top: 50px;
+  font-size: 15px;
+  text-align: center;
 }
