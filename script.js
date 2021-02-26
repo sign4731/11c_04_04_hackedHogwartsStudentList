@@ -109,11 +109,11 @@ function prepareObjects(jsonData) {
     // Pictures
     if (finalstudentLastName.includes("-")) {
       const splittedLastName = finalstudentLastName.split("-");
-      student.photo = `images/${splittedLastName[1]}_${student.firstName.charAt(0)}.png`;
+      student.photo = `/images/${splittedLastName[1]}_${student.firstName.charAt(0)}.png`;
     } else if (finalstudentLastName.includes("Patil")) {
-      student.photo = `images/${student.lastName}_${student.firstName}.png`;
+      student.photo = `/images/${student.lastName}_${student.firstName}.png`;
     } else {
-      student.photo = `images/${student.lastName}_${student.firstName.charAt(0)}.png`;
+      student.photo = `/images/${student.lastName}_${student.firstName.charAt(0)}.png`;
     }
 
     // console.log(Student);
@@ -170,7 +170,7 @@ function filterList(filteredList) {
     filteredList = allStudents.filter(isPrefect);
   } else if (settings.filterBy === "expelled") {
     filteredList = expelledStudents;
-  } else if (settings.filterBy === "fullBlood") {
+  } else if (settings.filterBy === "pureBlood") {
     filteredList = allStudents.filter(isFullBLood);
   } else if (settings.filterBy === "halfBlood") {
     filteredList = allStudents.filter(isHalfBLood);
