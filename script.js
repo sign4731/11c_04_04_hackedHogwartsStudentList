@@ -107,13 +107,13 @@ function prepareObjects(jsonData) {
     student.house = finalstudentHouse;
 
     // Pictures
-    if (finalstudentLastName.includes("-")) {
-      const splittedLastName = finalstudentLastName.split("-");
-      student.photo = `/images/${splittedLastName[1]}_${student.firstName.charAt(0)}.png`;
-    } else if (finalstudentLastName.includes("Patil")) {
-      student.photo = `/images/${student.lastName}_${student.firstName}.png`;
+    if (studentLastName.includes("-")) {
+      const splittedLastName = studentLastName.split("-");
+      student.photo = `images/${splittedLastName[1]}_${studentFirstName.charAt(0)}.png`;
+    } else if (studentLastName.includes("patil")) {
+      student.photo = `images/${studentLastName}_${studentFirstName}.png`;
     } else {
-      student.photo = `/images/${student.lastName}_${student.firstName.charAt(0)}.png`;
+      student.photo = `images/${studentLastName}_${studentFirstName.charAt(0)}.png`;
     }
 
     // console.log(Student);
