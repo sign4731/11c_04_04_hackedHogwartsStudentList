@@ -41,22 +41,15 @@
       </div>
 
       <!-- pop ups here -->
-      <section class="popup_warning">
+      <section id="warning" class="popup_warning">
         <article>
             <h1 >Warning!</h1>
-            <p>You are not able to assign the chosen property to this student</p>
-            <button>Understood</button>
+            <p>This student is not classified to be a member if the Inquisitorial squad!</p>
+            <button class="understood_button">Understood</button>
           </div>
         </article>
       </section>
-      <section class="popup_warning expel_warning">
-        <article>
-            <h1 >Warning!</h1>
-            <p>This student is alredy expelled! You can not expel someone twice...</p>
-            <button>Understood</button>
-          </div>
-        </article>
-      </section>
+      
       <section class="popup_warning prefect_warning">
         <article>
           <button class="close_button">X</button>
@@ -83,9 +76,6 @@
             <p class="popupExpelled"></p>
             <button class="closeButton closeSlytherin">Close</button>
           </div>
-          <div class="make_buttons">
-            <button class="make_member">Make member</button>
-          </div>
         </article>
       </section>
 
@@ -105,9 +95,7 @@
             <p class="popupExpelled"></p>
             <button class="closeButton closeGryffindor">Close</button>
           </div>
-          <div class="make_buttons">
-            <button class="make_member">Make member</button>
-          </div>
+
         </article>
       </section>
       <section class="popup" id="popupHufflepuff">
@@ -126,9 +114,7 @@
             <p class="popupExpelled"></p>
             <button class="closeButton closeHufflepuff">Close</button>
           </div>
-          <div class="make_buttons">
-            <button class="make_member">Make member</button>
-          </div>
+
         </article>
       </section>
       <section class="popup" id="popupRavenclaw">
@@ -147,9 +133,6 @@
             <p class="popupExpelled"></p>
             <button class="closeButton closeRavenclaw">Close</button>
           </div>
-          <div class="make_buttons">
-            <button class="make_member">Make member</button>
-          </div>
         </article>
       </section>
 
@@ -166,6 +149,7 @@
           <p class="lastName"></p>
           <p class="house"></p>
           <button class="make_prefect">Make prefect</button>
+          <button class="make_member">Make member</button>
           <button class="expel">Expel</button>
           <button class="details">See details</button>
         </article>
